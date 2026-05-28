@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --neon-blue: #00d4ff;
+  --neon-purple: #7c3aed;
+  --neon-green: #00ff88;
+  --dark-900: #020408;
+  --dark-800: #050d15;
+  --dark-700: #091624;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dark-900);
+  color: #e2e8f0;
+  font-family: 'Syne', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark-800); }
+::-webkit-scrollbar-thumb { background: var(--neon-blue); border-radius: 3px; }
+
+/* Glassmorphism */
+.glass {
+  background: rgba(9, 22, 36, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neon text */
+.neon-text {
+  color: var(--neon-blue);
+  text-shadow: 0 0 10px var(--neon-blue), 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue);
+}
+
+.neon-text-purple {
+  color: #a78bfa;
+  text-shadow: 0 0 10px #7c3aed, 0 0 20px #7c3aed;
+}
+
+/* Cyber grid background */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glow button */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-glow:hover::before { left: 100%; }
+
+/* Terminal cursor */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Scan line effect */
+.scan-line {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--neon-blue), transparent);
+  animation: scan 4s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.3;
+}
+
+@keyframes scan {
+  0% { top: 0; }
+  100% { top: 100vh; }
+}
+
+/* Section heading underline */
+.section-underline {
+  position: relative;
+}
+
+.section-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  border-radius: 2px;
+  box-shadow: 0 0 10px var(--neon-blue);
+}
+
+/* Skill bar fill */
+.skill-fill {
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  box-shadow: 0 0 8px var(--neon-blue);
+  border-radius: 4px;
+  height: 100%;
+}
+
+/* Achievement counter */
+.counter-glow {
+  text-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-blue);
+}
+
+/* Light mode overrides */
+.light body {
+  background: #f0f4f8;
+  color: #1a202c;
+}
+
+.light .glass {
+  background: rgba(255,255,255,0.8);
+  border-color: rgba(0,0,0,0.1);
+}
+
+/* Particle canvas */
+#particle-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hover glow card */
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  border-color: rgba(0,212,255,0.5);
+  box-shadow: 0 0 20px rgba(0,212,255,0.15), 0 0 40px rgba(0,212,255,0.05);
+  transform: translateY(-4px);
+}
+
+/* Timeline connector */
+.timeline-line {
+  background: linear-gradient(180deg, var(--neon-blue), var(--neon-purple));
+}
+
+/* Loading bar */
+.loading-bar {
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--neon-blue));
+  background-size: 200% 100%;
+  animation: loading-shift 1.5s ease infinite;
+}
+
+@keyframes loading-shift {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+.light-mode-bg {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.light .neon-text {
+  color: #0284c7;
+  text-shadow: none;
+}
+
+.light .cyber-grid {
+  background-image: 
+    linear-gradient(rgba(2,132,199,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(2,132,199,0.06) 1px, transparent 1px);
+}
