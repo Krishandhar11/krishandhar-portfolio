@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { Mail, Link as LinkedinIcon, GitBranch as GithubIcon, MapPin, ExternalLink } from 'lucide-react';
+import { Mail, Link as LinkedinIcon, GitBranch as GithubIcon, MapPin } from 'lucide-react';
 
 const contactInfo = [
   { icon: <Mail className="w-5 h-5" />, label: 'Direct Email', value: 'krishandhar11@gmail.com', href: 'mailto:krishandhar11@gmail.com?subject=Portfolio%20Inquiry', color: 'cyan' },
@@ -45,10 +45,10 @@ export default function Contact() {
             <div className="glass rounded-2xl p-6 border border-cyan-500/20 h-full">
               <h3 className="font-display text-xl font-bold text-white mb-3">Let's Collaborate</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                I am currently looking for new opportunities in cybersecurity engineering, cloud infrastructure support, and technical administration. 
+                I am currently looking for new opportunities in cybersecurity engineering, cloud infrastructure support, and technical administration.
               </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Whether you have a job opening, a project idea, or just want to connect reach out via any of these channels!
+                Whether you have a job opening, a project idea, or just want to connect over network security—reach out via any of these channels!
               </p>
             </div>
           </motion.div>
@@ -77,7 +77,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="mt-4 sm:mt-0 flex items-center gap-2 font-mono text-xs text-slate-400 group-hover:text-cyan-400 transition-colors">
-                LAUNCH APP <ExternalLink className="w-3.5 h-3.5" />
+                LAUNCH APP
               </div>
             </motion.a>
 
