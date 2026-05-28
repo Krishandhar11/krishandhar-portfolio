@@ -48,7 +48,7 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
               <div className="absolute inset-0 bg-cyan-400 rounded-full blur-md opacity-30 group-hover:opacity-60 transition-opacity" />
             </div>
             <span className="font-display font-bold text-lg tracking-wider">
-              <span className="neon-text">KS</span>
+              <span className="neon-text">KDS</span>
               <span className={darkMode ? 'text-slate-300' : 'text-slate-700'}>&#x2F;&#x2F;</span>
             </span>
           </motion.a>

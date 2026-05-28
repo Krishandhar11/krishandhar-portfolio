@@ -19,7 +19,7 @@ export default function Footer() {
           >
             <div className="flex items-center justify-center gap-2 mb-4">
               <Shield className="w-6 h-6 text-cyan-400" />
-              <span className="font-display font-bold text-xl neon-text">KS</span>
+              <span className="font-display font-bold text-xl neon-text">KDS</span>
             </div>
             <p className="font-display text-lg font-bold text-white tracking-wider mb-1">
               Securing Infrastructure.
