@@ -103,7 +103,7 @@ export default function Experience() {
                         {exp.promoted && (
                           <div className="flex items-center gap-1.5 mb-2">
                             <Award className="w-3.5 h-3.5 text-yellow-400" />
-                            <span className="font-mono text-xs text-yellow-400">{exp.prev} — Promoted on performance</span>
+                            <span className="font-mono text-xs text-yellow-400"></span>
                           </div>
                         )}
                         <p className={`font-semibold text-sm ${c.icon}`}>{exp.company}</p>
