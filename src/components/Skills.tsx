@@ -38,7 +38,7 @@ const skillCategories = [
     color: 'pink',
     skills: [
       'FortiGate', 'SentinelOne', 'Wireshark',
-      'Nmap', 'PowerShell', 'VPN Tools', 'IOC & CTI Platforms',
+      'Nmap', 'Splunk', 'IOC & CTI Platforms',
     ],
   },
 ];

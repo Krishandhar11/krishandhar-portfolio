@@ -4,8 +4,8 @@ import { Mail, Link as LinkedinIcon, GitBranch as GithubIcon, MapPin, Send, Chec
 
 const contactInfo = [
   { icon: <Mail className="w-5 h-5" />, label: 'Email', value: 'krishandhar11@gmail.com', href: 'mailto:krishandhar11@gmail.com', color: 'cyan' },
-  { icon: <LinkedinIcon className="w-5 h-5" />, label: 'LinkedIn', value: '/in/krishandhar-sharma', href: 'https://linkedin.com', color: 'blue' },
-  { icon: <GithubIcon className="w-5 h-5" />, label: 'GitHub', value: '/krishandhar-sharma', href: 'https://github.com', color: 'purple' },
+  { icon: <LinkedinIcon className="w-5 h-5" />, label: 'LinkedIn', value: '/in/krishandhar-sharma', href: 'https://www.linkedin.com/in/krishandhar-sharma/', color: 'blue' },
+  { icon: <GithubIcon className="w-5 h-5" />, label: 'GitHub', value: '/krishandhar-sharma', href: 'https://github.com/Krishandhar11', color: 'purple' },
   { icon: <MapPin className="w-5 h-5" />, label: 'Location', value: 'Jaipur, India', href: '#', color: 'green' },
 ];
 

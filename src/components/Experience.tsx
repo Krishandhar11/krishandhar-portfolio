@@ -6,8 +6,6 @@ const experiences = [
   {
     company: 'Choice Finserv Private Limited',
     role: 'Senior Infrastructure & Network Security Engineer',
-    prev: 'Previously: IT Infrastructure & Security Engineer',
-    promoted: true,
     period: 'Aug 2025 — Present',
     location: 'Jaipur, India',
     color: 'cyan',

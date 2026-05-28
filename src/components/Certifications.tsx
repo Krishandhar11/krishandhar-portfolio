@@ -100,7 +100,7 @@ export default function Certifications() {
                 ) : (
                   <div className="flex items-center gap-1.5 text-xs text-yellow-400 font-mono">
                     <BookOpen className="w-3.5 h-3.5" />
-                    Trained — In Progress
+                    Certification — In Progress
                   </div>
                 )}
               </div>

@@ -62,8 +62,8 @@ export default function About() {
             <div className="grid grid-cols-3 gap-4">
               {[
                 { value: '75+', label: 'Branches Managed' },
-                { value: '4+', label: 'Certifications' },
-                { value: '2+', label: 'Years Experience' },
+                { value: '10+', label: 'Certifications' },
+                { value: '1.5+', label: 'Years Experience' },
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}

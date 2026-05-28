@@ -48,7 +48,7 @@ const achievements = [
   },
   {
     icon: <BarChart3 className="w-7 h-7" />,
-    value: 4,
+    value: 10,
     suffix: '+',
     label: 'Certifications Earned',
     desc: 'CEH, ISC2 CC, FortiGate Operator, and CCNA training completed',

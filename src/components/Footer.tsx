@@ -48,8 +48,8 @@ export default function Footer() {
           {/* Socials */}
           <div className="flex items-center gap-4">
             {[
-              { icon: <LinkedinIcon className="w-4 h-4" />, href: 'https://linkedin.com' },
-              { icon: <GithubIcon className="w-4 h-4" />, href: 'https://github.com' },
+              { icon: <LinkedinIcon className="w-4 h-4" />, href: 'https://www.linkedin.com/in/krishandhar-sharma/' },
+              { icon: <GithubIcon className="w-4 h-4" />, href: 'https://github.com/Krishandhar11' },
               { icon: <Mail className="w-4 h-4" />, href: 'mailto:krishandhar11@gmail.com' },
             ].map((social, i) => (
               <motion.a

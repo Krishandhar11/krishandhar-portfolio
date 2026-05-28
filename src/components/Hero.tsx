@@ -43,8 +43,8 @@ export default function Hero() {
 
   const ctaButtons = [
     { label: 'Download Resume', icon: <Download className="w-4 h-4" />, href: '#resume', primary: true },
-    { label: 'LinkedIn', icon: <LinkedinIcon className="w-4 h-4" />, href: 'https://linkedin.com', primary: false },
-    { label: 'GitHub', icon: <GithubIcon className="w-4 h-4" />, href: 'https://github.com', primary: false },
+    { label: 'LinkedIn', icon: <LinkedinIcon className="w-4 h-4" />, href: 'https://www.linkedin.com/in/krishandhar-sharma/', primary: false },
+    { label: 'GitHub', icon: <GithubIcon className="w-4 h-4" />, href: 'https://github.com/Krishandhar11', primary: false },
     { label: 'Contact Me', icon: <Mail className="w-4 h-4" />, href: '#contact', primary: false },
   ];
 

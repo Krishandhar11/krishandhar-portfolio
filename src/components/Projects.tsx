@@ -39,7 +39,7 @@ const projects = [
     title: 'Infra & Cybersecurity Support Chatbot',
     icon: <Bot className="w-6 h-6" />,
     color: 'green',
-    tags: ['AI', 'Python', 'NLP', 'IT Automation', 'Security'],
+    tags: ['AI', 'Python', 'IT Automation', 'Security'],
     description: 'AI-powered IT support and cybersecurity troubleshooting assistant that automates L1/L2 support workflows, integrates knowledge base, and provides smart security guidance.',
     features: [
       'AI-powered troubleshooting assistant',
