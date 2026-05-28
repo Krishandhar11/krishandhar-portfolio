@@ -83,7 +83,7 @@ export default function Contact() {
 
             {/* Other Social Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {contactInfo.filter(info => info.label !== 'Direct Email').map((info, i) => (
+              {contactInfo.filter(info => info.label !== 'Direct Email').map((info) => (
                 <motion.a
                   key={info.label}
                   href={info.href}
